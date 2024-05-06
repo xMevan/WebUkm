@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web UKM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            float: right;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .welcome {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .ukm-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .ukm-item {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .ukm-item:hover {
+            transform: translateY(-5px);
+        }
+        .ukm-item h3 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .ukm-item p {
+            margin-bottom: 0;
+            color: #666;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo-institusi.png" alt="Logo Institusi" width="100">
+        </div>
+        <a href="index.html">Profil UKM</a>
+        <a href="gallery.html">Gallery Kegiatan</a>
+        <a href="form.html">Pendaftaran</a>
+        <a href="kontak.html">Kontak</a>
+    </div>
+    <div class="content">
+        <div class="welcome">
+            <h1>UNIT KEGIATAN MAHASISWA UNIVERSITAS ABC</h1>
+            <p>Ini adalah halaman utama dari web UKM kami. Silakan jelajahi menu di atas dan jenis-jenis ukm dibawah ini.</p>
+        </div>
+        
+        <h2>Jenis-Jenis UKM</h2>
+        <div class="ukm-list">
+            <div class="ukm-item">
+                <h3><a href="ukm_tari.html">UKM Tari Tradisional</a></h3>
+                <p>UKM yang mengembangkan dan mempertahankan kebudayaan melalui seni tari tradisional.</p>
+            </div>
+            <div class="ukm-item">
+                <h3><a href="ukm_pencaksilat.html">UKM Pencak Silat</a></h3>
+                <p>UKM yang mempelajari dan mengajarkan pencak silat sebagai warisan budaya.</p>
+            </div>
+            <div class="ukm-item">
+                <h3><a href="ukm_kerajinan.html">UKM Kerajinan</a></h3>
+                <p>UKM yang menghasilkan berbagai produk kerajinan tangan.</p>
+            </div>
+            <div class="ukm-item">
+                <h3><a href="ukm_kreatif.html">UKM Kreatif</a></h3>
+                <p>UKM dengan ide-ide kreatif dan inovatif dalam berbagai bidang.</p>
+            </div>
+            <div class="ukm-item">
+                <h3><a href="ukm_teknologi.html">UKM Teknologi</a></h3>
+                <p>UKM yang mengembangkan teknologi baru untuk solusi modern.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Web UKM - All Rights Reserved</p>
+    </div>
+</body>
+</html>

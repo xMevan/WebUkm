@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - Web UKM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            float: right;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .welcome {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .ukm-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .ukm-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .ukm-item h3 {
+            margin-top: 0;
+        }
+        .ukm-item p {
+            margin-bottom: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .form-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-container input,
+        .form-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .form-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo-institusi.png" alt="Logo Institusi" width="100">
+        </div>
+        <a href="index.html">Profil UKM</a>
+        <a href="gallery.html">Gallery Kegiatan</a>
+        <a href="form.html">Pendaftaran</a>
+        <a href="kontak.html">Kontak</a>
+    </div>
+    <div class="content">
+        <h2>Form Pendaftaran UKM</h2>
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" required>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <select id="jenis_kelamin" name="jenis_kelamin" required>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+                <label for="program_studi">Program Studi:</label>
+                <input type="text" id="program_studi" name="program_studi" required>
+                <label for="ukm">UKM yang akan diikuti:</label>
+                <select id="ukm" name="ukm" required>
+                    <option value="UKM Pakaian">UKM Pakaian</option>
+                    <option value="UKM Kuliner">UKM Kuliner</option>
+                    <option value="UKM Kerajinan">UKM Kerajinan</option>
+                    <option value="UKM Kreatif">UKM Kreatif</option>
+                    <option value="UKM Teknologi">UKM Teknologi</option>
+                </select>
+                <label>Pilihan hari kegiatan:</label>
+                <div>
+                    <input type="checkbox" id="senin" name="hari[]" value="Senin">
+                    <label for="senin">Senin</label>
+                    <input type="checkbox" id="selasa" name="hari[]" value="Selasa">
+                    <label for="selasa">Selasa</label>
+                    <input type="checkbox" id="rabu" name="hari[]" value="Rabu">
+                    <label for="rabu">Rabu</label>
+                    <input type="checkbox" id="kamis" name="hari[]" value="Kamis">
+                    <label for="kamis">Kamis</label>
+                    <input type="checkbox" id="jumat" name="hari[]" value="Jumat">
+                    <label for="jumat">Jumat</label>
+                </div>
+                <button type="submit">Simpan</button>
+                <button type="button" onclick="window.location.href='index.html'">Batal</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Web UKM - All Rights Reserved</p>
+    </div>
+</body>
+</html>

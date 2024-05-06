@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Web UKM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            float: right;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+        .ukm-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 600px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .ukm-item h3 {
+            margin-top: 0;
+        }
+        .ukm-item p {
+            margin-bottom: 0;
+        }
+        .ukm-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .ukm-item .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+        .ukm-item .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .contact-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+        .contact-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .contact-container button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo-institusi.png" alt="Logo Institusi" width="100">
+        </div>
+        <a href="index.html">Profil UKM</a>
+        <a href="gallery.html">Gallery Kegiatan</a>
+        <a href="form.html">Pendaftaran</a>
+        <a href="kontak.html">Kontak</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Web UKM - All Rights Reserved</p>
+    </div>
+    <div class="contact-container">
+        <h2>Kontak</h2>
+        <form action="#" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Kegiatan - Web UKM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            float: right;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-item {
+            margin-bottom: 30px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo-institusi.png" alt="Logo Institusi" width="100">
+        </div>
+        <a href="index.html">Profil UKM</a>
+        <a href="gallery.html">Gallery Kegiatan</a>
+        <a href="form.html">Pendaftaran</a>
+        <a href="kontak.html">Kontak</a>
+    </div>
+    <div class="content">
+        <h1>Galeri Kegiatan</h1>
+        
+        <div class="gallery-item">
+            <h2>UKM Tari Tradisional</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FErjf6u5ubM" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="kegiatan_tari.jpg" alt="Kegiatan UKM Tari Tradisional">
+            <p>UKM yang mengembangkan dan mempertahankan kebudayaan melalui seni tari tradisional.</p>
+        </div>
+
+        <div class="gallery-item">
+            <h2>UKM Pencak Silat</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gUZWp740uxo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="kegiatan_pencaksilat.jpg" alt="Kegiatan UKM Pencak Silat">
+            <p>UKM yang mempelajari dan mengajarkan pencak silat sebagai warisan budaya.</p>
+        </div>
+
+        <div class="gallery-item">
+            <h2>UKM Kerajinan</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pks_5ueO-2A" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="kegiatan_kerajinan.jpg" alt="Kegiatan UKM Kerajinan">
+            <p>UKM yang menghasilkan berbagai produk kerajinan tangan.</p>
+        </div>
+
+        <div class="gallery-item">
+            <h2>UKM Kreatif</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T_D8w9GJwH8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="kegiatan_kreatif.jpg" alt="Kegiatan UKM Kreatif">
+            <p>UKM dengan ide-ide kreatif dan inovatif dalam berbagai bidang.</p>
+        </div>
+
+        <div class="gallery-item">
+            <h2>UKM Teknologi</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fiuhu924--M" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="kegiatan_teknologi.jpg" alt="Kegiatan UKM Teknologi">
+            <p>UKM yang mengembangkan teknologi baru untuk solusi modern.</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Web UKM - All Rights Reserved</p>
+    </div>
+</body>
+</html>
